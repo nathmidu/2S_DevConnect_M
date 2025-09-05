@@ -1,0 +1,198 @@
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.container-flex-publi {
+  background-color: rgb(249, 246, 249);
+ /* height: 700px;*/
+  width: 90%;
+  max-width: 900px;
+  display: flex; /*ativa o flex*/
+  flex-direction: column; /*muda a direcao do flex*/
+  gap: 30px;
+
+}
+
+#storys {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: scroll;
+  gap: 30px;
+}
+
+#storys::-webkit-scrollbar{
+  width: 0;
+}
+
+.card-story {
+  /* background-color: cornflowerblue; */
+}
+
+.card-story>button {
+  background-color: transparent;
+  border: none;
+  /* text-decoration: none; */ /*SÓ PARA QUEM ESTÁ COM A TAG <a>*/
+
+  font-size: var(--tamanho-fonte-sm);
+  color:var(#9938b7);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+  
+}
+
+.card-story>button>img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+/* seção criar publi */
+.formulario-botao-roxa{
+  width: 135px;
+}
+
+#criar-publi{
+  padding: 10px;
+}
+
+#criar-publi>h2{
+  color:var(--cor-preto);
+  font-size: var(--tamanho-fonte-lg);
+  font-weight: 700;
+  margin-bottom: 30px;
+
+}
+
+#criar-publi > form > textarea{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    resize: none; /*desabilita a redimensao do tamnho do elemento*/
+    border: var(--borda);
+
+    color: black;
+    font-family: var(--tamanho-fonte-sm);
+
+}
+
+#criar-publi > form > textarea::placeholder{
+  color: var(--cor-cinza-escuro1);
+}
+
+#criar-publi > form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+}
+
+#criar-publi>form>footer{
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+
+}
+
+/*secao publicacoes*/
+#publicacoes{
+  background-color: darkgrey;
+  width: 100%;
+  /*height: 600%;*/
+}
+
+.card-publi{
+  background-color: var(--cor-branco);
+  width: 100%;
+  height: 600px;
+}
+
+.card-publi > header{
+  padding: 15px;
+
+}
+
+.card-publi > header > a{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  text-decoration: none;
+  color: black;
+  text-transform: lowercase;
+
+}
+
+.card-publi>figure{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.imagem-publicacao{
+  object-fit: cover;/*redimensiona a imgagem*/
+  object-position: center;
+  width: 100%;
+  height: 350px;
+
+}
+
+.card-publi>figure>figcaption{
+  color: var(--cor-preto);
+  font-size: var(--tamanho-fonte-md);
+  font-weight: 500;
+  display: flex; /*por padrao o flexbox deixa os elementos em linha*/
+  align-items: center;
+  column-gap: 5px;
+  order: 2;
+  margin: 15px;
+
+}
+
+.descricao-publicacao{
+  font-size: var(--tamanho-fonte-sm);
+  font-weight: 400;
+}
+
+.interacoes-publicacao{
+  display: flex;
+  width: 95px;
+  flex-wrap: wrap;
+ /* justify-content: space-between;*/
+  /*gap*/
+  column-gap: 15px;
+  order: 1;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.interacoes-publicacao> button{
+  background-color: transparent;
+  border: none;
+}
+
+.card-publi> figure > button{
+  background-color: transparent;
+  border: none;
+
+  color: var(--cor-cinza-escuro1);
+  font-size: var(--tamanho-fonte-sm);
+
+  order: 3;
+
+  margin-left: 15px;
+  align-items: flex-start;
+}
