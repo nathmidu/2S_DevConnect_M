@@ -1,0 +1,77 @@
+/*perfil*/
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: rgb(122, 122, 122);
+}
+
+#Perfil{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.perfil-container {
+  /*background-color: blueviolet;*/
+  /* height: 700px; */
+  width: 90%;
+  max-width: 900px;
+  display: flex;
+  /*ativa o flex*/
+  flex-direction: column;
+  /*muda a direção do flex*/
+  gap: 30px;
+}
+
+#Perfil>nav{
+ display: flex;
+ flex-direction: column;
+ gap: 30px;
+}
+
+#Perfil>nav>div{
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
+  font-size: var(--tamanho-fonte-md);
+  color: black;
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.card-publi-perfil-card{
+border: var(--borda);
+margin: 10px;
+height: auto;
+}
+
+.interacoes-publicacao{
+  display: flex;
+  width: 88px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+#botao-comentario {
+    background-color: transparent;
+    border: none;
+  
+    color: var(--cor-cinza-medio);
+    font-size: var(--tamanho-fonte-sm);
+  
+    order: 3; 
+  
+    margin-left: 15px;
+  
+}
+
